@@ -23,7 +23,7 @@ int main(void)
 			{
 				for (number = 0; number <= 9; number++)
 				{
-					if (!((n == nos && num == number) || (n == nos && num < number)))
+					if (!((n == nos && num == number) || (n == nos && num > number)))
 					{
 						putchar('0' + n);
 						putchar('0' + num);
