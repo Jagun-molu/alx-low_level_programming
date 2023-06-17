@@ -10,31 +10,31 @@
  */
 int main(void)
 {
-	int number;
-	int num;
+	int n1;
+	int n3;
 	int n;
-	int nos;
+	int n2;
 
 	for (n = 0; n <= 9; n++)
 	{
-		for (num = 0; num <= 9; num++)
+		for (n3 = 0; n3 <= 9; n3++)
 		{
-			for (nos = n; nos <= 9; nos++)
+			for (n2 = n; n2 <= 9; n2++)
 			{
-				for (number = 0; number <= 9; number++)
+				for (n1 = 0; n1 <= 9; n1++)
 				{
-					if (!((n == nos && num == number) || (n == nos && num > number)))
+					if (!((n == n2 && n3 == n1) || (n == n2 && n3 > n1)))
 					{
 						putchar('0' + n);
-						putchar('0' + num);
+						putchar('0' + n3);
 						putchar(' ');
-						putchar('0' + nos);
-						putchar('0' + number);
-						if (!(n == 9 && num == 8 && nos == 9 && number == 9))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar('0' + n2);
+						putchar('0' + n1);
+					}
+					if (!(n == 9 && n3 == 8 && n2 == 9 && n1 == 9) && !(n == n2 && n3 >= n1))
+					{
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
