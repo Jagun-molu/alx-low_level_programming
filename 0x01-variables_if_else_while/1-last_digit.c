@@ -12,7 +12,7 @@ int main(void)
 {
 	int n;
 	int last_digit;
-	char excess_chars[14];
+	char m[14];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -27,8 +27,8 @@ int main(void)
 	}
 	else
 	{
-		sprintf(message, "Last digit of ");
-		printf("%s %d is %d and is less than 6 and not 0\n", message, n, last_digit);
+		sprintf(m, "Last digit of ");
+		printf("%s %d is %d and is less than 6 and not 0\n", m, n, last_digit);
 	}
 	return (0);
 }
