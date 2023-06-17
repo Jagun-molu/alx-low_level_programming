@@ -21,7 +21,7 @@ int main(void)
 		{
 			for (nos = n; nos <= 9; nos++)
 			{
-				for (number = nos + 1; number <= 9; number++)
+				for (number = 0; number <= 9; number++)
 				{
 					putchar('0' + n);
 					putchar('0' + num);
