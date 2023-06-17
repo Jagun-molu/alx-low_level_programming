@@ -17,11 +17,11 @@ int main(void)
 
 	for (n = 0; n <= 9; n++)
 	{
-		for (num = 0; num <= 9; num++)
+		for (num = 0; num < 9; num++)
 		{
 			for (nos = n; nos <= 9; nos++)
 			{
-				for (number = num + 1; number <= 9; number++)
+				for (number = num; number <= 9; number++)
 				{
 					putchar('0' + n);
 					putchar('0' + num);
