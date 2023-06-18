@@ -9,7 +9,7 @@
 int main(void)
 {
 	char c[80];
-	
+
 	strcpy(c, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	fputs(c, stderr);
 	return (1);
