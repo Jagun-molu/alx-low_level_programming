@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Entry point of the program
@@ -7,6 +8,9 @@
  */
 int main(void)
 {
-	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
+	char c[80];
+	
+	strcpy(c, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	fputs(c, stderr);
 	return (1);
 }
