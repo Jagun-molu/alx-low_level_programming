@@ -11,5 +11,5 @@
 
 void _putchar(char character)
 {
-	putchar(character);
+	fputs(character);
 }
