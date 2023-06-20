@@ -11,12 +11,5 @@
 
 void _putchar(char character)
 {
-	putchar(character)
-}
-
-int main(void)
-{
-
-	return (0);
-
+	putchar(character);
 }
