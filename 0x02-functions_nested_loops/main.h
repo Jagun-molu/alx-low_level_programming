@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-void _puchar(char character)
+void _putchar(char character)
 {
 	putchar(character)
 }
