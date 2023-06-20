@@ -11,5 +11,5 @@
 
 void _putchar(char character)
 {
-	fputs(character);
+	printf("%c\n", character);
 }
