@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-void _putchar(char character)
+void _putchar(char* character)
 {
-	printf("%c\n", character);
+	printf("%s\n", character);
 }
