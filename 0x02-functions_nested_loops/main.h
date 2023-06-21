@@ -1,15 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
+/* Function Prototypes*/
 
-void _putchar(char* character)
-{
-	printf("%s\n", character);
-}
+int _putchar(char c);
+
+#endif
