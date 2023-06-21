@@ -9,10 +9,10 @@
 int _islower(int alphabet)
 {
 
-	if (97 <= alphabet + '0' && alphabet + '0' <= 122)
+	if (alphabet + '0' >= 145 && alphabet + '0' <= 170)
 	{
-		return (0);
+		return (1);
 	}
-	return (1);
+	return (0);
 
 }
