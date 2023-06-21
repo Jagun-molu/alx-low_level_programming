@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * functionName - A brief description of the function.
+ * print_alphabet - A brief description of the function.
  *
  * Description: Provide a more detailed description of the function,
  * explaining its purpose, parameters, and any other relevant details.
