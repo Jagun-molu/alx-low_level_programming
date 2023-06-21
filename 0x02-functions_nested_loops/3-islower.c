@@ -9,7 +9,7 @@
 int _islower(int alphabet)
 {
 
-	if (!(alphabet + '0' < 97 || alphabet + '0' > 122))
+	if (97 <= alphabet + '0' && alphabet + '0' <= 122)
 	{
 		return (0);
 	}
