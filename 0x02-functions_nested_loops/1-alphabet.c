@@ -1,10 +1,9 @@
 #include "main.h"
-/* more headers goes there */
-
 /**
- * main - Entry point of the program
+ * functionName - A brief description of the function.
  *
- * Return: Always 0 (Success)
+ * Description: Provide a more detailed description of the function,
+ * explaining its purpose, parameters, and any other relevant details.
  */
 void print_alphabet(void)
 {
