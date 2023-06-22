@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_multiples_of_3_and_5 - Prints multiples of 3 and 5 from 0 to @n
+ * natural - Prints multiples of 3 and 5 from 0 to @n
  *
  *
  */
-void print_multiples_of_3_and_5()
+void natural(void)
 {
 	int i, j;
 
