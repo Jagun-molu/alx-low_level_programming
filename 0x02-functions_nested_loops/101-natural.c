@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * natural - Prints multiples of 3 and 5 from 0 to @n
+ * main - Prints multiples of 3 and 5 from 0 to @n
  *
- *
+ * Return: 0 Always
  */
-void natural(void)
+void main(void)
 {
 	int i, j;
 
