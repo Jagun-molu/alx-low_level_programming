@@ -18,5 +18,5 @@ int main(void)
 	}
 	printf("%d\n", j);
 
-	Return (0);
+	return (0);
 }
