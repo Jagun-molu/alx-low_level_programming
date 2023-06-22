@@ -16,7 +16,7 @@ int main(void)
 	while (i <= 50)
 	{
 		if (i == 3)
-			m = j + k;
+			l = j + k;
 		else
 		{
 			j = k;
