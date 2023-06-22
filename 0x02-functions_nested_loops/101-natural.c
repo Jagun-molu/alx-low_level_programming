@@ -4,9 +4,9 @@
 /**
  * print_multiples_of_3_and_5 - Prints multiples of 3 and 5 from 0 to @n
  *
- * @n: The number to begin printing from.
+ *
  */
-void print_multiples_of_3_and_5(int n)
+void print_multiples_of_3_and_5()
 {
 	int i, j;
 
