@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	long long i, j, k, l;
 
 	i = 3;
 	j = 1;
 	k = 2;
-	printf("%d, %d ", 1, 2);
+	printf("%d, %d, ", 1, 2);
 	while (i <= 50)
 	{
 		if (i == 3)
