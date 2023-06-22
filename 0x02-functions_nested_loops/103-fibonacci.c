@@ -31,6 +31,6 @@ int main(void)
 		if (l % 2 == 0)
 			m += l;
 	}
-	putchar('\n');
+	printf("%lu\n", m);
 	return (0);
 }
