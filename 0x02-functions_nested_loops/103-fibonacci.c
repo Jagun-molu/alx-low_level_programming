@@ -7,8 +7,10 @@
  */
 int main(void)
 {
+	int i;
 	unsigned long int j, k, l;
 
+	i = 3;
 	j = 1;
 	k = 2;
 	l = 0;
@@ -18,7 +20,10 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 		if (i == 3)
+		{
 			l = j + k;
+			i++;
+		}
 		else
 		{
 			j = k;
