@@ -12,7 +12,7 @@ int main(void)
 	i = 3;
 	j = 1;
 	k = 2;
-	printf("%d, %d ", 1, 2)
+	printf("%d, %d ", 1, 2);
 	while (i <= 50)
 	{
 		if (i == 3)
@@ -29,7 +29,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		i++
+		i++;
 	}
-	return 0
+	return 0;
 }
