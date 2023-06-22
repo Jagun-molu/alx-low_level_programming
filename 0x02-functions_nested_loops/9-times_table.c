@@ -27,13 +27,13 @@ void times_table(void)
 		for (j = 0; j <= 9; ++j)
 		{
 			k = i * j;
+			if (k < 10 && j != 0)
+				_putchar(' ');
 			print_integer(k);
 			if (j != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (k < 10)
-					_putchar(' ');
 			}
 		}
 		_putchar('\n');
