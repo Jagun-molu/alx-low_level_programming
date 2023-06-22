@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i;
+	unsigned long int j, k, l;
 
 	i = 3;
 	j = 1;
@@ -23,7 +24,7 @@ int main(void)
 			k = l;
 			l += j;
 		}
-		printf("%d", l);
+		printf("%lu", l);
 		if (i != 50)
 		{
 			putchar(',');
