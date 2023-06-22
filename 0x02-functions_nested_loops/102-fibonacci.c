@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 /**
  * main - Prints first 50 fibonacci numbers
@@ -7,11 +8,12 @@
  */
 int main(void)
 {
-	long long i, j, k, l;
+	int i
+	int64_t j, k, l;
 
 	i = 3;
-	j = 1;
-	k = 2;
+	j = 1LL;
+	k = 2LL;
 	printf("%d, %d, ", 1, 2);
 	while (i <= 50)
 	{
@@ -23,7 +25,7 @@ int main(void)
 			k = l;
 			l += j;
 		}
-		printf("%d", l);
+		printf("%lld", l);
 		if (i != 50)
 		{
 			putchar(',');
