@@ -8,11 +8,12 @@
 int main(void)
 {
 	int i;
-	unsigned long int j, k, l;
+	unsigned long int j, k, l, m;
 
 	i = 3;
 	j = 1;
 	k = 2;
+	m = 1000000000;
 	printf("%d, %d, ", 1, 2);
 	while (i <= 98)
 	{
@@ -24,7 +25,7 @@ int main(void)
 			k = l;
 			l += j;
 		}
-		printf("%lu", l);
+		printf("%lu", ((l % m) * m) + (l / m));
 		if (i != 98)
 		{
 			putchar(',');
