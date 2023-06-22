@@ -8,12 +8,13 @@
  */
 int print_last_digit(int alphabet)
 {
+	alphabet = alphabet % 10;
 
 	if (alphabet < 0)
 	{
 		alphabet = alphabet * -1;
 	}
-	_putchar('0' + (alphabet % 10));
-	return (alphabet % 10);
+	_putchar('0' + alphabet);
+	return (alphabet);
 
 }
