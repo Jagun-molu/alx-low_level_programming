@@ -14,7 +14,7 @@ int main(void)
 	j = 1;
 	k = 2;
 	l = 0;
-	m = 0;
+	m = 2;
 	while (l + k < 4000000)
 	{
 		if (i == 3)
