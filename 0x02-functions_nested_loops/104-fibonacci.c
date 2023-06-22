@@ -26,9 +26,7 @@ int main(void)
 			l += j;
 		}
 		if (l > m)
-			printf("%lu", ((l % m) * m) + (l / m));
-		else
-			printf("%lu", l);
+			printf("%lu", ((l / m) * m) + (l % m));
 		if (i != 98)
 		{
 			putchar(',');
