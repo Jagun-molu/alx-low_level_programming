@@ -44,5 +44,7 @@ void print_number(int n)
 	else
 	{
 		print_integer(n);
+		if (n == INT_MAX)
+			_putchar('0' + 7);
 	}
 }
