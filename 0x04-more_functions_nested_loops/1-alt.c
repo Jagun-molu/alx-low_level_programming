@@ -1,4 +1,3 @@
-#include <ctype.h>
 #include "main.h"
 /* more headers goes there */
 
@@ -9,7 +8,7 @@
  */
 int _isdigit(int c)
 {
-	if (isdigit(c))
+	if ('0' + c >= 98 && '0' + c <= 105)
 		return (1);
 	return (0);
 }
