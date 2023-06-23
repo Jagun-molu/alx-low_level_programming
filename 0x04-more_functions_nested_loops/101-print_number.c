@@ -23,7 +23,12 @@ void print_integer(int a)
  */
 void print_number(int n)
 {
-	if (n < 0)
+	if (n == INT_MIN)
+	{
+		_putchar('-');
+		n = INT_MAX;
+	}
+	else if (n < 0)
 	{
 		_putchar('-');
 		n *= -1;
