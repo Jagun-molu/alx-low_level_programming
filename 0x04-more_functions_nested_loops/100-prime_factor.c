@@ -2,22 +2,29 @@
 #include <math.h>
 #include "main.h"
 
-int is_prime(int n)
+/**
+ * is_prime - Checks whether @n is prime
+ * @n: The number to be checked.
+ *
+ * Return: 1 if @n is prime and 0 otherwise
+ */
+
+int is_prime(unsigned long int n)
 {
-	int i, l;
+	unsigned long int i, l;
 	double k;
 
 	k = sqrt(n);
-	l = (int)ceil(k)
+	l = (unsigned long int)k + 1;
 
 	if (n < 2)
-		return (true);
+		return (1);
 	for (i = 2; i <= l; i++)
 	{
 		if (n % i == 0)
-			return (false);
+			return (0);
 	}
-	return (true);
+	return (1);
 }
 /**
  * main - check the code
@@ -26,20 +33,21 @@ int is_prime(int n)
  */
 int main(void)
 {
-	int i, j;
+
+	unsigned long int i, j;
 
 	i = 612852475143;
-	while (!(is_prime(i)))
+	while (is_prime(i) == 0)
 	{
 		for (j = 2; j < i; j++)
 		{
-			if (i % j == 0 && is_prime(j))
+			if (i % j == 0 && is_prime(j) == 1)
 			{
 				i /= j;
 				continue;
 			}
 		}
-		printf("%d", i);
+		printf("%lu", i);
 	}
 
 	return (0);
