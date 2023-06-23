@@ -1,5 +1,5 @@
-#include "main.h"
 #include <limits.h>
+#include "main.h"
 
 /**
  * print_integer - Prints the given integer to the standard output.
