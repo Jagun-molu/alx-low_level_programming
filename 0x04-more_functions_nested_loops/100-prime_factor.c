@@ -49,6 +49,6 @@ int main(void)
 		}
 		printf("%lu", i);
 	}
-
+	printf("\n");
 	return (0);
 }
