@@ -8,6 +8,10 @@
  */
 void print_integer(int a)
 {
+	if (a == INT_MAX)
+	{
+		a /= 10;
+	}
 	if (a / 10)
 	{
 		print_integer(a / 10);
@@ -28,11 +32,17 @@ void print_number(int n)
 	{
 		_putchar('-');
 		n = INT_MAX;
+		print_integer(n);
+		_putchar('0' + 8);
 	}
 	else if (n < 0)
 	{
 		_putchar('-');
 		n *= -1;
+		print_integer(n);
 	}
-	print_integer(n);
+	else
+	{
+		print_integer(n);
+	}
 }
