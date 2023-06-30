@@ -11,6 +11,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
+	char *result = dest;
 
 	while (*dest)
 	{
@@ -29,5 +30,5 @@ char *_strncat(char *dest, char *src, int n)
 		putchar(*dest);
 	}
 
-	return (dest);
+	return (result);
 }
