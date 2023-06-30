@@ -11,6 +11,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	char *result = dest;
 
 	while (*src && n > 0)
 	{
@@ -21,5 +22,5 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	*dest = '\0';
 
-	return (dest);
+	return (result);
 }
