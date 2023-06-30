@@ -5,13 +5,13 @@
  * leet - x
  * @n: y
  *
- * Return: The concatenated @dest + @src.
+ * Return: replaced result
  */
 char *leet(char *n)
 {
 	int i, j;
-	char a[] = "aAeEoOtTlL";
-	char b[] = "4433007711";
+	char a[10] = "aAeEoOtTlL";
+	char b[10] = "4433007711";
 
 	for (i = 0; n[i] != '\0'; n++)
 	{
