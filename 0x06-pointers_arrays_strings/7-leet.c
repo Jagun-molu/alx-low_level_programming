@@ -20,6 +20,7 @@ char *leet(char *n)
 			if (n[i] == a[j])
 			{
 				n[i] = b[j];
+				break;
 			}
 		}
 	}
