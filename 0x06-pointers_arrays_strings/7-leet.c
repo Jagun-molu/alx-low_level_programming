@@ -10,8 +10,10 @@
 char *leet(char *n)
 {
 	int i, j;
-	char a[10] = "aeotlAEOTL";
-	char b[10] = "4307143071";
+
+	char *result = n;
+	char a[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	char b[10] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
 
 	for (i = 0; n[i] != '\0'; n++)
 	{
@@ -23,5 +25,5 @@ char *leet(char *n)
 			}
 		}
 	}
-	return (n);
+	return (result);
 }
