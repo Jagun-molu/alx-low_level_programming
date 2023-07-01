@@ -11,9 +11,9 @@
 char *cap_string(char *c)
 {
 	char *result = c;
-	char check[] = " ;.!?\"(){}";
+	char check[] = " ;.!?\"(){}\t\n";
 	int temp, j;
-	int cond = 0;
+	int cond = 1;
 
 	while (*c != '\0')
 	{
@@ -22,9 +22,9 @@ char *cap_string(char *c)
 			temp = *c;
 			if (temp >= 97 && temp <= 122)
 				*c = (char)(temp - 32);
-			cond = 0;
 		}
-		for (j = 0; j < 11; j++)
+		cond = 0;
+		for (j = 0; j < 12; j++)
 		{
 			if (*c == check[j])
 			{
